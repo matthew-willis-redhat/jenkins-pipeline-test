@@ -9,9 +9,9 @@ metadata:
     kubernetes.io/quota-tier: small
 spec:
   hard:
-    cpu: '4'
+    cpu: '6'
     memory: 16Gb
-    limits.cpu: '8'
+    limits.cpu: '12'
     limits.memory: 32Gb
   scopes:
   - NotTerminating
