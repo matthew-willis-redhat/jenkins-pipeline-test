@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     // Create config variable
-                    def config = readYaml file: "template_resource_quota.yaml"
+                    def config = readYaml file: "templates/resource_quota.yaml"
 
                     // Update content from template; config variable
                     config.metadata.namespace = params.namespace
@@ -43,7 +43,7 @@ pipeline {
                 }
                 
                 // Print out template
-                sh "cat template_resource_quota.yaml"
+                sh "cat templates/resource_quota.yaml"
                 // Print out resource_quota.yaml
                 sh "cat resource_quota.yaml"
                 
