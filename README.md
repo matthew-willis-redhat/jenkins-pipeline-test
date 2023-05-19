@@ -20,7 +20,7 @@ Make a SSH key and add the public key to GitHub or wherever. Update the private 
 Variables that are neccessary to be updated within the pipeline.
 
 |Variable|Description|
-|:--|:--|:--|
+|:--|:--|
 |BRANCH_NAME |main, dev, or whatever branch|
 |CREDENTIAL_ID| This is the ID that is stored for the credential in Jenkins|
 |REPO_URL| This is the repo url using git/ssh|
