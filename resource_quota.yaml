@@ -4,14 +4,14 @@ metadata:
   name: quota
   namespace: test
   labels:
-    quota-tier: small
+    quota-tier: large
   annotations:
-    kubernetes.io/quota-tier: small
+    kubernetes.io/quota-tier: large
 spec:
   hard:
-    cpu: '4'
-    memory: 16Gb
-    limits.cpu: '8'
-    limits.memory: 32Gb
+    cpu: '16'
+    memory: 32Gb
+    limits.cpu: '32'
+    limits.memory: 64Gb
   scopes:
   - NotTerminating
