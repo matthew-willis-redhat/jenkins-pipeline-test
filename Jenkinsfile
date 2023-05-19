@@ -48,8 +48,8 @@ pipeline {
                 sh "cat resource_quota.yaml"
                 
                 // Add updated files to git repository and commit
-                sh "git add *"
-                sh "git commit -m 'Updated with Jenkins Pipeline Job - ${JOB_NAME}: ${BUILD_NUMBER}'"
+                sh "git add --all"
+                sh "git diff-index --quiet HEAD || git commit -m 'Updated with Jenkins Pipeline Job - ${JOB_NAME}: ${BUILD_NUMBER}'"
             }
         }
         
